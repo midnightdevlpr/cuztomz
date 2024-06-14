@@ -58,17 +58,19 @@ const Navbar = () => {
                 >
                   Sign Up
                 </Link>
-                {isAdmin ? (
-                  <Link
-                    href="/api/auth/logout"
-                    className={buttonVariants({
-                      size: "sm",
-                      variant: "ghost",
-                    })}
-                  >
-                    Dashboard ✨
-                  </Link>
-                ) : null}
+
+                <Link
+                  href="/api/auth/login "
+                  className={buttonVariants({
+                    size: "sm",
+                    variant: "ghost",
+                  })}
+                >
+                  Login
+                </Link>
+
+                <div className="h-8 w-px bg-zinc-200 sm:block" />
+
                 <Link
                   href="/configure/upload"
                   className={buttonVariants({
